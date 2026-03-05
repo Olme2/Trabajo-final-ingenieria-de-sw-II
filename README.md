@@ -37,3 +37,11 @@ Consisten en la ejecución repetida de pruebas que ya se realizaron.
 Consiste en una prueba de caja negra a gran escala que se realiza cuando el software se encuentra integrado. 
 * Su resultado demuestra la conformidad con los requisitos funcionales, de rendimiento y de comportamiento.
 * Incluyen la prueba Alfa, conducida por el cliente en un ambiente controlado (lugar de desarrollo), y la prueba Beta, conducida por el usuario final en un entorno no controlado.
+
+## Aplicación práctica
+Imaginemos la construcción de un sistema web integral, por ejemplo, un proyecto desarrollado utilizando Next.js para el frontend y una base de datos SQL para manejar datos dinámicos.
+
+1. **Pruebas de Unidad:** El desarrollador aísla la función que calcula precios promedio a partir de una consulta SQL. Utiliza un *driver* para pasar parámetros de entrada (como fechas o categorías) e imprime los resultados, verificando que la lógica algorítmica y los límites no generen desbordes o variables inconsistentes.
+2. **Pruebas de Integración:** Se prueba la conexión entre el frontend en Next.js y el backend. Utilizando un enfoque ascendente, se combinan primero los módulos de bajo nivel (consultas a la base de datos) y luego se integran hacia arriba con los componentes de la interfaz de usuario, escribiendo conductores para coordinar la prueba.
+3. **Pruebas de Regresión:** Al agregar una nueva funcionalidad en el panel de administración, se corre la suite de pruebas automatizadas para asegurar que los módulos de visualización de usuarios que ya funcionaban no presenten comportamientos no planeados.
+4. **Pruebas de Validación:** Se realiza una prueba Alfa con el cliente en el entorno de desarrollo para garantizar que el diseño de las vistas y la documentación cumplan estrictamente con las expectativas comerciales iniciales.

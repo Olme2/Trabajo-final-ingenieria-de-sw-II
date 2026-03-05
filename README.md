@@ -39,12 +39,12 @@ Consiste en una prueba de caja negra a gran escala que se realiza cuando el soft
 * Incluyen la prueba Alfa, conducida por el cliente en un ambiente controlado (lugar de desarrollo), y la prueba Beta, conducida por el usuario final en un entorno no controlado.
 
 ## Aplicación práctica
-Imaginemos la construcción de un sistema web integral, por ejemplo, un proyecto desarrollado utilizando Next.js para el frontend y una base de datos SQL para manejar datos dinámicos.
+Para ilustrar cómo se implementan los distintos tipos de pruebas en un entorno real, plantearemos el escenario ficticio del desarrollo de una plataforma de comercio electrónico. El equipo de desarrollo utiliza JavaScript y el framework de pruebas Jest para automatizar el proceso.
 
-1. **Pruebas de Unidad:** El desarrollador aísla la función que calcula precios promedio a partir de una consulta SQL. Utiliza un *driver* para pasar parámetros de entrada (como fechas o categorías) e imprime los resultados, verificando que la lógica algorítmica y los límites no generen desbordes o variables inconsistentes.
-2. **Pruebas de Integración:** Se prueba la conexión entre el frontend en Next.js y el backend. Utilizando un enfoque ascendente, se combinan primero los módulos de bajo nivel (consultas a la base de datos) y luego se integran hacia arriba con los componentes de la interfaz de usuario, escribiendo conductores para coordinar la prueba.
-3. **Pruebas de Regresión:** Al agregar una nueva funcionalidad en el panel de administración, se corre la suite de pruebas automatizadas para asegurar que los módulos de visualización de usuarios que ya funcionaban no presenten comportamientos no planeados.
-4. **Pruebas de Validación:** Se realiza una prueba Alfa con el cliente en el entorno de desarrollo para garantizar que el diseño de las vistas y la documentación cumplan estrictamente con las expectativas comerciales iniciales.
+### Escenario Ficticio: Módulo de Carrito de Compras
+El sistema necesita una función central que calcule el total a pagar por un usuario, aplicando descuentos e impuestos. En el siguiente repositorio se encuentran 4 archivos, cada uno con su respectiva prueba en este escenario ficticio:
+
+https://github.com/frc11/Repositorio-parte-practica-trabajo-ing-II/
 
 ## Mejores Prácticas:
 * Las pruebas unitarias y de integración deben ser realizadas por el desarrollador, pero las validaciones de mayor escala deben incluir a un grupo de prueba independiente para evitar conflictos de interés.

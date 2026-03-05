@@ -54,3 +54,10 @@ Imaginemos la construcción de un sistema web integral, por ejemplo, un proyecto
 * **Detección eficiente:** La integración incremental permite construir y probar en pequeños segmentos fáciles de aislar y corregir.
 * **Fiabilidad demostrable:** Los datos que se van recogiendo proporcionan un buen indicador de la fiabilidad y calidad del sistema como un todo.
 * **Prevención de colapsos en producción:** Probar exhaustivamente los límites previene fallos críticos en condiciones extremas de uso.
+
+## Desafíos y consideraciones
+* **La prueba no genera calidad:** La calidad se incorpora al software durante el proceso de ingeniería, aplicando métodos y revisiones adecuadas; la prueba solo la evalúa.
+* **Límites de cobertura:** Un testeo completo y exhaustivo es imposible y poco práctico, por lo que prima el principio de la economía de las pruebas.
+* **Complejidad del ecosistema:** Escribir resguardos en la integración descendente o aislar dependencias en sistemas orientados a objetos puede añadir una "sobrecarga" de trabajo significativa.
+* **El arte de la depuración:** Conectar el error detectado en la prueba con su causa raíz sigue siendo un proceso complejo; a veces un síntoma aparece intermitentemente o su causa real está ubicada en un módulo muy alejado.
+

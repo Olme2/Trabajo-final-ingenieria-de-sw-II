@@ -27,3 +27,13 @@ Tienen como objetivo construir sistemáticamente la estructura del sistema de so
 * Se debe evitar la integración "Big-Bang", donde se combinan todos los módulos de golpe.
 * **Integración Descendente:** Los módulos se integran al moverse hacia abajo a través de la jerarquía de control, requiriendo resguardos.
 * **Integración Ascendente:** Comienza con la construcción y prueba de módulos atómicos, eliminando la necesidad de resguardos pero requiriendo conductores.
+
+### 3. Pruebas de Regresión
+Consisten en la ejecución repetida de pruebas que ya se realizaron.
+* Aseguran que los cambios o correcciones no propagan efectos colaterales no deseados.
+* La automatización de este tipo de pruebas es esencial.
+
+### 4. Pruebas de Validación
+Consiste en una prueba de caja negra a gran escala que se realiza cuando el software se encuentra integrado. 
+* Su resultado demuestra la conformidad con los requisitos funcionales, de rendimiento y de comportamiento.
+* Incluyen la prueba Alfa, conducida por el cliente en un ambiente controlado (lugar de desarrollo), y la prueba Beta, conducida por el usuario final en un entorno no controlado.

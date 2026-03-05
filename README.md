@@ -61,3 +61,11 @@ Imaginemos la construcción de un sistema web integral, por ejemplo, un proyecto
 * **Complejidad del ecosistema:** Escribir resguardos en la integración descendente o aislar dependencias en sistemas orientados a objetos puede añadir una "sobrecarga" de trabajo significativa.
 * **El arte de la depuración:** Conectar el error detectado en la prueba con su causa raíz sigue siendo un proceso complejo; a veces un síntoma aparece intermitentemente o su causa real está ubicada en un módulo muy alejado.
 
+## Conclusión
+La prueba del software es un conjunto de actividades que se deben planificar y llevar a cabo sistemáticamente, no como un evento aislado al final de la programación. Dominar la distinción y la aplicación secuencial de las pruebas de unidad, integración, regresión y validación permite a los ingenieros de software construir estructuras sólidas, garantizando que el producto final cumpla exactamente con lo que el cliente solicitó.
+
+## Referencias
+* Pressman, Roger S. Software engineering: a practitioner's approach. 7th edition. Palgrave Macmillan, 2010.
+* Myers, Glenford J., Corey Sandler, y Tom Badgett. The art of software testing. John Wiley & Sons, 2011.
+* Mentz, María Isabel. Ingeniería de Software II. Facultad de Ciencias Exactas y Tecnología, Universidad Nacional de Tucumán, 2014.
+* Valdecantos, Mg. Héctor A. Pruebas del Software. Facultad de Ciencias Exactas y Tecnología, Universidad Nacional de Tucumán.

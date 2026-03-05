@@ -45,3 +45,12 @@ Imaginemos la construcción de un sistema web integral, por ejemplo, un proyecto
 2. **Pruebas de Integración:** Se prueba la conexión entre el frontend en Next.js y el backend. Utilizando un enfoque ascendente, se combinan primero los módulos de bajo nivel (consultas a la base de datos) y luego se integran hacia arriba con los componentes de la interfaz de usuario, escribiendo conductores para coordinar la prueba.
 3. **Pruebas de Regresión:** Al agregar una nueva funcionalidad en el panel de administración, se corre la suite de pruebas automatizadas para asegurar que los módulos de visualización de usuarios que ya funcionaban no presenten comportamientos no planeados.
 4. **Pruebas de Validación:** Se realiza una prueba Alfa con el cliente en el entorno de desarrollo para garantizar que el diseño de las vistas y la documentación cumplan estrictamente con las expectativas comerciales iniciales.
+
+## Mejores Prácticas:
+* Las pruebas unitarias y de integración deben ser realizadas por el desarrollador, pero las validaciones de mayor escala deben incluir a un grupo de prueba independiente para evitar conflictos de interés.
+* Mantener una alta cohesión en el diseño del código, ya que esto simplifica drásticamente la escritura de los casos de prueba unitarios.
+
+## Beneficios de implementar la técnica
+* **Detección eficiente:** La integración incremental permite construir y probar en pequeños segmentos fáciles de aislar y corregir.
+* **Fiabilidad demostrable:** Los datos que se van recogiendo proporcionan un buen indicador de la fiabilidad y calidad del sistema como un todo.
+* **Prevención de colapsos en producción:** Probar exhaustivamente los límites previene fallos críticos en condiciones extremas de uso.

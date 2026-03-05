@@ -11,3 +11,19 @@ El flujo de información en el proceso de pruebas sigue un ciclo sistemático. C
 Existen dos grandes enfoques metodológicos para diseñar estos casos de prueba:
 * **Pruebas de Caja Negra:** Centrados en los requisitos funcionales del software. Operan sobre la interfaz del software para demostrar que sus funciones son operativas, que la entrada es correcta y la salida es correcta, sin tener en cuenta la estructura lógica interna.
 * **Pruebas de Caja Blanca:** Aseguran que la operación interna se ajusta a las especificaciones basándose en un preciso examen de los detalles procedimentales. Garantizan que se pruebe por lo menos una vez todos los caminos independientes y se ejerciten todas las decisiones lógicas.
+
+## Desarrollo conceptual
+La estrategia de pruebas avanza en forma de espiral, disminuyendo el nivel de abstracción y ampliando el alcance a medida que el sistema crece.
+
+### 1. Pruebas de Unidad
+Centran el proceso de verificación en la unidad más pequeña del diseño de software: el componente o módulo. En sistemas orientados a objetos, la menor unidad a probar es la clase u objeto encapsulado. 
+* Se prueba la interfaz para asegurar que la información fluye adecuadamente.
+* Se controlan las estructuras de datos locales y los caminos de manejo de errores.
+* Se validan las condiciones de frontera o límites, ya que el software suele fallar en estos extremos.
+* Las pruebas suelen requerir de un "conductor" (driver) que acepte los casos de prueba y de "resguardos" (stubs) que reemplacen a los módulos subordinados.
+
+### 2. Pruebas de Integración
+Tienen como objetivo construir sistemáticamente la estructura del sistema de software a la vez que se llevan a cabo pruebas para detectar errores asociados con la interfaz. 
+* Se debe evitar la integración "Big-Bang", donde se combinan todos los módulos de golpe.
+* **Integración Descendente:** Los módulos se integran al moverse hacia abajo a través de la jerarquía de control, requiriendo resguardos.
+* **Integración Ascendente:** Comienza con la construcción y prueba de módulos atómicos, eliminando la necesidad de resguardos pero requiriendo conductores.

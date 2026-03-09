@@ -39,12 +39,13 @@ Consiste en una prueba de caja negra a gran escala que se realiza cuando el soft
 * Incluyen la prueba Alfa, conducida por el cliente en un ambiente controlado (lugar de desarrollo), y la prueba Beta, conducida por el usuario final en un entorno no controlado.
 
 ## Aplicación práctica
-Para ilustrar cómo se implementan los distintos tipos de pruebas en un entorno real, plantearemos el escenario ficticio del desarrollo de una plataforma de comercio electrónico. El equipo de desarrollo utiliza JavaScript y el framework de pruebas Jest para automatizar el proceso.
+Para ilustrar cómo se implementan los distintos tipos de pruebas en un entorno real, plantearemos el escenario ficticio del desarrollo de una plataforma para gestionar las ventas de una polleria. El equipo de desarrollo utiliza C# para realizar este sistema y para probarlo usamos pruebas de escritorio.
 
-### Escenario Ficticio: Módulo de Carrito de Compras
-El sistema necesita una función central que calcule el total a pagar por un usuario, aplicando descuentos e impuestos. En el siguiente repositorio se encuentran 4 archivos, cada uno con su respectiva prueba en este escenario ficticio:
+### Escenario Ficticio: Sistema de gestion de polleria
+El sistema necesita una función central que calcule el total de una venta sumando los detalles que conlleva esa venta. Hicimos una prueba unitaria para esto, luego una prueba de integracion que integran los modulos de venta con su controller, una prueba de validacion que utiliza views para probar que siga siendo funcional y por ultimo la prueba de validacion que ejecuta el sistema completo para realizarle pruebas de caja negra en vivo. 
 
-https://github.com/frc11/Repositorio-parte-practica-trabajo-ing-II/
+Las primeras 3 pruebas se encuentran en el siguiente repositorio: https://github.com/frc11/Repositorio-parte-practica-trabajo-ing-II/
+El sistema completo se encuentra en este repositorio: https://github.com/Olme2/Programa
 
 ## Mejores Prácticas:
 * Las pruebas unitarias y de integración deben ser realizadas por el desarrollador, pero las validaciones de mayor escala deben incluir a un grupo de prueba independiente para evitar conflictos de interés.

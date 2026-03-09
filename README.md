@@ -45,6 +45,7 @@ Para ilustrar cómo se implementan los distintos tipos de pruebas en un entorno 
 El sistema necesita una función central que calcule el total de una venta sumando los detalles que conlleva esa venta. Hicimos una prueba unitaria para esto, luego una prueba de integracion que integran los modulos de venta con su controller, una prueba de validacion que utiliza views para probar que siga siendo funcional y por ultimo la prueba de validacion que ejecuta el sistema completo para realizarle pruebas de caja negra en vivo. 
 
 Las primeras 3 pruebas se encuentran en el siguiente repositorio: https://github.com/frc11/Repositorio-parte-practica-trabajo-ing-II/
+
 El sistema completo se encuentra en este repositorio: https://github.com/Olme2/Programa
 
 ## Mejores Prácticas:
